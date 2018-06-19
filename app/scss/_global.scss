@@ -19,6 +19,11 @@ p {
   line-height: 1.75;
 }
 
+a {
+  cursor: pointer;
+  color:#cb7182 !important;
+}
+
 .text-faded {
   color: fade-out($white, 0.7);
 }
@@ -62,7 +67,7 @@ p {
   }
   .section-heading-lower {
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
   }
 }
@@ -73,4 +78,8 @@ p {
 
 .text-pink {
   color: $secondary;
+}
+
+#round {
+  border-radius: 100% !important;
 }
