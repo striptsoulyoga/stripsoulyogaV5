@@ -107,10 +107,11 @@ ul.navbar-nav.mx-auto.logo-li {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #000;
   font-weight: 800;
+  cursor: pointer;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #9E354A;
+  color: #000;
 }
 
 ul.navbar-nav.mx-auto {
@@ -125,7 +126,7 @@ ul.navbar-nav.mx-auto {
     font-size: 0.8rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: inherit;
+    color: #9E354A;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #9E354A;
