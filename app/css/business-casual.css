@@ -292,3 +292,16 @@ div.rounded {
 .rounded {
   border-radius: 100% !important;
 }
+
+@media (max-width: 992px) {
+  ul.navbar-nav.mx-auto.logo-li {
+    display: none;
+  }
+  i.fas.fa-bars {
+    color: #000;
+    cursor: pointer;
+  }
+  ul.navbar-nav.mx-auto {
+    flex-flow: column !important;
+  }
+}
