@@ -14,12 +14,23 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     
     <link href="./app/css/business-casual.css" rel="stylesheet">
+    
+    <style>
+      /* Set the size of the div element that contains the map */
+
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
 
   </head>
 
@@ -72,32 +83,77 @@
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="./app/img/yoga.jpg" alt="">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Breathe In, Breathe Out</span>
-              <span class="section-heading-lower">Let the breath strip everything away so your soul can shine.</span>
+              <span class="section-heading-lower" style="padding-bottom:.5em;">Breathe In, Breathe Out</span>
+              <span class="section-heading-upper">Let the breath strip everything away so your soul can shine.</span>
             </h2>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="page-section cta">
+    <section class="page-section">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
-              <!-- <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Our Promise</span>
-                <span class="section-heading-lower">To You</span>
-              </h2> -->
+            <img class="img-fluid" 
+            src="/app//img/lotus-flower.png" 
+            alt="A Lotus Flower Drawing" 
+            style="max-width: 7rem;
+            margin: 0 auto;
+            display: flex;
+            border-radius: 100%;
+            margin-bottom: 1em;">
               <p class="mb-0">Welcome to Stript Soul Yoga, a one of a kind boutique Yoga Studio located in West Hollywood, behind Stript Wax Bar. Here,
                 we welcome everyone from all levels to our transformative, nurturing yet sweaty vinyasa style classes. No matter your level,
                 we invite you to explore your breath, yoga and our studio. Come Flow with us at Stript Soul Yoga today and experience the
                 positive changes the breath, and yoga can make.</p>
+              <br>
+              <p>Namaste</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    const uluru = {
+      lat: 34.073329,
+      lng: -118.375995
+    };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(
+      document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArFi4X6H4Cy_PXSEJ-zwBJIGHbizTvo3c&callback=initMap">
+</script>
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">

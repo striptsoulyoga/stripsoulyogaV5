@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lora';
+  font-family: 'Special Elite';
   background: #fff;
   background-attachment: fixed;
   background-position: center;
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway';
+  font-family: 'Bad Script';
 }
 
 p {
@@ -32,7 +32,7 @@ li {
   margin-bottom: 2rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: 'Raleway';
+  font-family: 'Bad Script';
 }
 
 .site-heading .site-heading-upper {
@@ -87,12 +87,12 @@ ul.navbar-nav.mx-auto.logo-li {
 }
 
 .text-pink {
-  color: #C66376;
+  color: #000;
 }
 
 #mainNav {
   background-color: #fff;
-  font-family: 'Raleway';
+  font-family: 'Bad Script';
 }
 
 .nav-item {
@@ -101,7 +101,7 @@ ul.navbar-nav.mx-auto.logo-li {
 }
 
 #mainNav .navbar-brand {
-  color: #9E354A;
+  color: #000;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -126,10 +126,10 @@ ul.navbar-nav.mx-auto {
     font-size: 0.8rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #9E354A;
+    color: #000;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #9E354A;
+    color: #000;
   }
 }
 
@@ -239,7 +239,7 @@ ul.navbar-nav.mx-auto {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #9E354A;
+  color: #000;
 }
 
 @media (min-width: 992px) {
@@ -259,11 +259,11 @@ ul.navbar-nav.mx-auto {
 }
 
 .text-primary {
-  color: #9E354A !important;
+  color: #000 !important;
 }
 
 .bg-primary {
-  background-color: #9E354A !important;
+  background-color: #000 !important;
 }
 
 .btn {
@@ -271,8 +271,8 @@ ul.navbar-nav.mx-auto {
 }
 
 .btn-primary {
-  background-color: #9E354A;
-  border-color: #9E354A;
+  background-color: #000;
+  border-color: #000;
 }
 
 .btn-primary:hover,
