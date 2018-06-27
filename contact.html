@@ -43,8 +43,8 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto logo-li">
                     <li class="nav-item">
-                        <a href="index.html" <img class="logo" src="./app//img/logo.jpg" alt="Stript Soul Yoga Logo">
-                            <img class="logo" src="./app//img/logo.jpg" alt="Stript Soul Yoga Logo">
+                        <a href="index.html" Stript Soul Yoga
+                            Stript Soul Yoga
                         </a>
                     </li>
                 </ul>
@@ -65,6 +65,9 @@
                     </li>
                     <li class="nav-item active px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item active px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="events.html">Events & Workshops</a>
@@ -112,18 +115,40 @@
                                 display: flex;
                                 border-radius: 100%;
                                 margin-bottom: 1em;">
-                        <div class="bg-faded rounded p-5">
-                            <p class="mb-0">
-                                <i>“The success of Yoga does not lie in the ability to perform postures but in how it positively
-                                    changes the way we live our life and our relationships.”</i>
-                                <br> T.K.V. Desikachar
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="text-center">
+        <p class="address mb-5">
+        <em>
+            <strong>8218 West 3rd Street</strong>
+            <br> Los Angeles, Ca 90048
+            <br> located directly behind Stript Wax Bar
+            <br> entrance in alley
+            <br> street parking
+        </em>
+        </p>
+        <p class="mb-0">
+        <small>
+            <em>email: </em>
+        </small>
+        <br>
+        <a href="emailto:striptsouldyoga@gmail.com">striptsouldyoga@gmail.com</a>
+        </p>
+        <p class="mb-0" onclick="openInNewTab('https://www.instagram.com/striptsoulyoga');">
+        <small>
+            <em>instagram</em>
+        </small>
+        <br>
+        <em>
+            <i class="fab fa-instagram" style=" font-size: 2em; cursor: pointer;"></i>
+        </em>
+        </p>
+    </div>
 
     <footer class="footer text-faded text-center py-5">
         <div class="container">
@@ -134,6 +159,12 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+    </script>
 
 </body>
 

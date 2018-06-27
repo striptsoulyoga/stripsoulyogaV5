@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About Stript Soul Yoga</title>
+    <title>Striptsoul Yoga</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,14 +16,16 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Bad+Script:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="./app/css/business-casual.css" rel="stylesheet">
 
+    <link href="./app/css/business-casual.css" rel="stylesheet">
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
@@ -37,7 +39,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto logo-li">
                     <li class="nav-item">
-                        <a href="index.html">Stript Soul Yoga</a>
+                        <a href="index.html" Stript Soul Yoga
+                            Stript Soul Yoga
+                        </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mx-auto">
@@ -59,6 +63,9 @@
                         <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="events.html">Events & Workshops</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item active px-lg-4">
@@ -68,49 +75,90 @@
             </div>
         </div>
     </nav>
-    <section class="page-section about-heading">
+
+    <section class="page-section clearfix">
         <div class="container">
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-10 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-lower">What's Coming Up</span>
-                                <br>
-                                <span class="section-heading-upper">Yoga Party</span>
-                            </h2>
-                                <p>July 7, 2018 10:30 AM - 1:00 PM</p>
-                                <p>Hi, neighbors, we would love to meet you! Come in and say hello to us. We are new in the neighborhood, we decided to have
-                                a little gathering so we can get to know you. We think it will be a lot of fun. Yoga starts at 10:30 and will end at
-                                11:30, with the incredible Jenny Kim. Right after will be serving fo-nuts and champaign. We would love for you to stop
-                                by even if you can't take the yoga class. You will be able to meet all of our yoga teachers, check out the studio, eat
-                                fo-nuts and drink campaign. We want to build a yoga community with you! Free for all!</p>
-                        </div>
-                    </div>
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="./app/img/pricing.jpg" alt="">
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower" style="padding-bottom:.5em;">Pricing</span>
+                    </h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="page-section about-heading" style="margin-top: 0;">
+
+    <section class="page-section">
         <div class="container">
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-10 mx-auto">
-                        <img class="img-fluid" src="/app//img/lotus-flower.png" alt="A Lotus Flower Drawing" style="    max-width: 7rem;
-                                    margin: 0 auto;
-                                    display: flex;
-                                    border-radius: 100%;
-                                    margin-bottom: 1em;">
-                        
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <img class="img-fluid" src="/app//img/lotus-flower.png" alt="A Lotus Flower Drawing" style="max-width: 7rem;
+                            margin: 0 auto;
+                            display: flex;
+                            border-radius: 100%;
+                            margin-bottom: 1em;">
+                        <p class="mb-0">Drop in $15</p>
+                        <p class="mb-0">
+                            <em>First time Yogi</em>
+                        </p>
+                        <p class="mb-0">
+                            <em>We would love you to be able to try each different teacher once at this rate! $10</em>
+                        </p>
+                        <p class="mb-0">
+                            <em>See you on your mat!</em>
+                        </p>
+                        <br>
+                        <p>Namaste</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: 34.073329,
+                lng: -118.375995
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArFi4X6H4Cy_PXSEJ-zwBJIGHbizTvo3c&callback=initMap">
+    </script>
+
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; Stript Soul Yoga 2018</p>
+            <p class="m-0 small">Copyright &copy; striptsoulyoga.com</p>
         </div>
     </footer>
 

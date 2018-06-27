@@ -1,6 +1,6 @@
 body {
   font-family: 'Special Elite';
-  background: #fff;
+  background: #F9F8F4;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -74,12 +74,14 @@ ul.navbar-nav.mx-auto.logo-li {
   display: block;
   font-size: 1rem;
   font-weight: 800;
+  font-family: 'Special Elite';
 }
 
 .section-heading .section-heading-lower {
   display: block;
   font-size: 2rem;
   font-weight: 100;
+  padding-top: .5em;
 }
 
 .bg-faded {
@@ -91,7 +93,7 @@ ul.navbar-nav.mx-auto.logo-li {
 }
 
 #mainNav {
-  background-color: #fff;
+  background-color: #F9F8F4;
   font-family: 'Bad Script';
 }
 
@@ -112,6 +114,11 @@ ul.navbar-nav.mx-auto.logo-li {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #000;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 100%;
 }
 
 ul.navbar-nav.mx-auto {
@@ -174,7 +181,7 @@ ul.navbar-nav.mx-auto {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #fff;
+  background-color: #F9F8F4;
 }
 
 .cta .cta-inner {
@@ -254,7 +261,7 @@ ul.navbar-nav.mx-auto {
 }
 
 .footer {
-  background-color: #fff;
+  background-color: #F9F8F4;
   color: #000;
 }
 
